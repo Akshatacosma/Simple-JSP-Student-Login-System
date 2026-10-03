@@ -1,2 +1,20 @@
-# Simple-JSP-Student-Login-System
-A Java web application demonstrating a simple student login system using JSP and Servlets, deployed on Apache Tomcat. The application validates predefined student credentials and displays a welcome page after successful authentication.
+# Simple JSP Student Login System
+
+A simple Java web application that demonstrates student authentication using JSP and Java Servlets.
+
+## Features
+
+- Student login form
+- Username and password validation
+- Servlet-based authentication
+- Welcome page after successful login
+- Runs on Apache Tomcat
+
+## Technologies Used
+
+- Java
+- JSP
+- Java Servlets
+- HTML
+- Apache Tomcat
+- Maven
