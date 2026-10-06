@@ -70,45 +70,93 @@ Simple-JSP-Student-Login-System/
 └── README.md
 ```
 
-##🚀 How to Run
-1. Clone the Repository
+## 🚀 How to Run
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/akshatacosma/Simple-JSP-Student-Login-System.git
+```
 
-2. Navigate to the Project
+### 2. Navigate to the Project
+
+```bash
 cd Simple-JSP-Student-Login-System
+```
 
-3. Build the Project
-Run:
+### 3. Build the Project
+
+Run the following Maven command:
+
+```bash
 mvn clean package
+```
 
-After a successful build, the WAR file will be generated inside the target folder:
+After a successful build, the WAR file will be generated inside the `target` folder:
+
+```text
 target/student-login.war
+```
 
-4. Deploy on Apache Tomcat
-Copy the generated WAR file into the Tomcat webapps directory:
+### 4. Deploy on Apache Tomcat
+
+Copy the generated WAR file into the Tomcat `webapps` directory:
+
+```bash
 cp target/student-login.war <tomcat-folder>/webapps/
+```
 
-5. Start Tomcat
+### 5. Start Apache Tomcat
+
+Run:
+
+```bash
 <tomcat-folder>/bin/startup.sh
+```
 
-6. Open the Application
-Open:
+### 6. Open the Application
+
+Open the following URL in your browser:
+
+```text
 http://localhost:8080/student-login/login.jsp
+```
 
-If using ByteXL or another cloud development environment, open the exposed 8080 port and navigate to:
+For ByteXL or another cloud development environment, open the exposed **8080** port and navigate to:
+
+```text
 /student-login/login.jsp
+```
 
-##🧪 Testing
-Successful Login
-Enter the correct username and password and click Login.
-Expected result:
+---
+
+## 🧪 Testing
+
+### ✅ Successful Login
+
+1. Open the Student Login page.
+2. Enter the correct username.
+3. Enter the correct password.
+4. Click **Login**.
+
+**Expected Result:**  
 The user is redirected to the welcome page.
-Invalid Login
-Enter an incorrect username or password and click Login.
-Expected result:
+
+### ❌ Invalid Login
+
+1. Open the Student Login page.
+2. Enter an incorrect username or password.
+3. Click **Login**.
+
+**Expected Result:**  
 An invalid login message is displayed.
-##👩‍💻 Author
-Akshata
+
+---
+
+## 👩‍💻 Author
+
+**Akshata**
+
 B.Tech CSE (AI & ML) Student
 ⭐ If you find this project useful, feel free to explore the repository.
 
