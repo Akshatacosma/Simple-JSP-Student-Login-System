@@ -1,76 +1,115 @@
-# Simple JSP Student Login System
+# 🎓 Simple JSP Student Login System
 
-A simple Java web application developed to demonstrate a basic student authentication system using **JSP, HTML, Maven, and Apache Tomcat**.
+A simple Java web application that demonstrates a basic **student login and authentication system** using **JSP, HTML, Maven, and Apache Tomcat**.
 
-The application provides a student login form where the entered username and password are validated. If the credentials are correct, the student is redirected to a welcome page. If the credentials are incorrect, an appropriate error message is displayed.
+The application provides a login page where students enter their username and password. The credentials are validated, and the user is redirected to a welcome page after successful login.
 
 ---
 
 ## 📌 Project Overview
 
-The **Simple JSP Student Login System** is a beginner-friendly Java web application designed to demonstrate how a basic login workflow works in a Java web environment.
+This project was developed to understand the fundamentals of **Java web application development using JSP**.
 
-The project uses **JSP (JavaServer Pages)** to create the web pages and process the login request. Maven is used for project and dependency management, while Apache Tomcat is used as the web server for running the application.
+It demonstrates:
 
-This project is mainly created for learning and understanding:
-
-- JSP-based web applications
-- HTML forms
-- HTTP GET/POST requests
-- Request parameter handling
-- Username and password validation
-- Page redirection
-- Maven project structure
-- Apache Tomcat deployment
+- Creating web pages using JSP and HTML
+- Accepting username and password input
+- Processing login requests
+- Validating user credentials
+- Redirecting users between JSP pages
+- Building a Java web application using Maven
+- Deploying the application on Apache Tomcat
 
 ---
 
 ## ✨ Features
 
-- 🎓 Student login form
-- 👤 Username input
+- 👤 Student username input
 - 🔐 Password input
-- ✅ Username and password validation
-- 🚫 Invalid username/password message
-- 🎉 Login success page
-- 🔄 Automatic redirection after successful login
+- ✅ Basic credential validation
+- ❌ Invalid login message
+- 🎉 Welcome page after successful login
+- 🌐 JSP-based web interface
 - 📦 Maven-based project
-- 🌐 Runs on Apache Tomcat
-- 📁 Standard Java web application structure
+- 🚀 Apache Tomcat deployment
 
 ---
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
-|------------|---------|
+|---|---|
 | **Java** | Programming language |
-| **JSP** | Creating dynamic web pages |
-| **HTML** | Designing the login form |
-| **Jakarta JSP API** | JSP functionality |
-| **Apache Tomcat** | Web server/application server |
+| **JSP** | Dynamic web pages and login processing |
+| **HTML** | Login form structure |
 | **Maven** | Build and dependency management |
+| **Apache Tomcat 9.0.112** | Web server |
 | **XML** | Web application configuration |
+| **Git & GitHub** | Version control |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-student-login/
+Simple-JSP-Student-Login-System/
 │
 ├── src/
 │   └── main/
 │       └── webapp/
-│           │
 │           ├── WEB-INF/
 │           │   └── web.xml
 │           │
 │           ├── login.jsp
 │           └── welcome.jsp
 │
-├── target/
-│
 ├── pom.xml
+├── target/
+│   └── student-login.war
 │
 └── README.md
+```
+
+##🚀 How to Run
+1. Clone the Repository
+git clone https://github.com/akshatacosma/Simple-JSP-Student-Login-System.git
+
+2. Navigate to the Project
+cd Simple-JSP-Student-Login-System
+
+3. Build the Project
+Run:
+mvn clean package
+
+After a successful build, the WAR file will be generated inside the target folder:
+target/student-login.war
+
+4. Deploy on Apache Tomcat
+Copy the generated WAR file into the Tomcat webapps directory:
+cp target/student-login.war <tomcat-folder>/webapps/
+
+5. Start Tomcat
+<tomcat-folder>/bin/startup.sh
+
+6. Open the Application
+Open:
+http://localhost:8080/student-login/login.jsp
+
+If using ByteXL or another cloud development environment, open the exposed 8080 port and navigate to:
+/student-login/login.jsp
+
+##🧪 Testing
+Successful Login
+Enter the correct username and password and click Login.
+Expected result:
+The user is redirected to the welcome page.
+Invalid Login
+Enter an incorrect username or password and click Login.
+Expected result:
+An invalid login message is displayed.
+##👩‍💻 Author
+Akshata
+B.Tech CSE (AI & ML) Student
+⭐ If you find this project useful, feel free to explore the repository.
+
+**This is the version I'd use on your GitHub, dear.** ❤️ It's detailed enough to show what you learned, but it doesn't look unnecessarily bloated like a college report.
