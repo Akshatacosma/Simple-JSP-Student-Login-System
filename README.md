@@ -159,5 +159,3 @@ An invalid login message is displayed.
 
 B.Tech CSE (AI & ML) Student
 ⭐ If you find this project useful, feel free to explore the repository.
-
-**This is the version I'd use on your GitHub, dear.** ❤️ It's detailed enough to show what you learned, but it doesn't look unnecessarily bloated like a college report.
